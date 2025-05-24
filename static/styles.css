@@ -1,0 +1,120 @@
+body{
+    font-family: 'Sora', sans-serif;
+    background-color: #fbfbfb;
+    margin: 0;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+}
+
+#tabs{
+    display: flex;
+    margin-right: 100px;
+}
+
+.tab{
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+#logo{
+    width: 60px;
+    opacity: 0.5;
+    margin-left: 100px;
+}
+
+#whole{
+    background-color: red;
+    width: auto;
+    height: auto;
+}
+
+#holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.button{
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(77, 148, 231);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 62px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover{
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(60, 113, 172);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 62px;
+}
+
+#click_holder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.upload{
+    border: none;
+    background-color: transparent;
+    position: relative; /* This is necessary to make the images stack on top of each other */
+    width: 45px; /* Optional: Define a fixed width for the button */
+    height: 45px; /* Optional: Define a fixed height for the button */
+    margin-left: 10px;
+}
+
+.upload:hover .upload_img {
+    content: url('/static/images/upload_hover.png'); /* Path to the second image */
+}/* Image styles */
+.upload_img,
+.upload_img_hover {
+    position: absolute; /* Stack the images on top of each other */
+    top: 0;
+    left: 0;
+    width: 100%; /* Optional: Set to 100% to make both images cover the same area */
+    height: 100%; 
+    transition: opacity 0.3s ease;
+}
+
+/* Hide hover image by default */
+.upload_img_hover {
+    opacity: 0;
+}
+
+/* Show hover image when hovered */
+.upload:hover .upload_img_hover {
+    opacity: 1;
+}
+
+/* Make sure the original image fades out */
+.upload:hover .upload_img {
+    opacity: 0;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}

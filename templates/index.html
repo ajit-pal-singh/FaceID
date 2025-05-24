@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FaceID</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="/static/images/icon.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    </head>
+
+
+
+    <body>
+        <div id="nav">
+            <img id="logo" src="/static/images/logo.png" alt="">
+            <div id="tabs">
+                <p class="tab" onclick="window.location.href='/enlist'">enlist</p>
+                <p class="tab" onclick="window.location.href='/about'">about</p>
+            </div>
+        </div>
+        <div id="content">
+            <div id="holder">
+                <div id="lottie" style="width: 150px; height: 150px;"></div>
+                <div id="click_holder">
+                    <button class="button">Recognize</button>
+                    <button id="upload" class="upload">
+                        <img class="upload_img" src="/static/images/upload.png" alt="">
+                        <img class="upload_img_hover" src="/static/images/upload_hover.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>

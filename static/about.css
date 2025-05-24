@@ -1,0 +1,40 @@
+body{
+    font-family: 'Sora', sans-serif;
+    background-color: #fbfbfb;
+    margin: 0;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+}
+
+#tabs{
+    display: flex;
+    margin-right: 100px;
+}
+
+.tab{
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+#logo{
+    width: 60px;
+    opacity: 0.5;
+    margin-left: 100px;
+}
+
+.about{
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 90px;
+}
+
+.space{
+    line-height: 40px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Enlist</title>
+        <meta name="description" content="">
+        <link rel="icon" href="/static/images/icon.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='enlist.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    </head>
+    </head>
+    <body>
+        <div id="nav">
+            <img id="logo" src="/static/images/logo.png" alt="">
+            <div id="tabs">
+                <p class="tab" onclick="window.location.href='/'">recognise</p>
+                <p class="tab">about</p>
+            </div>
+        </div>
+        <div id="holder">
+            <div id="three_holder">
+                <input type="text" class="fields" id="name" name="name" placeholder="Enter Name">
+                <input type="text" class="fields" id="age" name="age" placeholder="Enter Age">
+                <input type="text" class="fields" id="gender" name="gender" placeholder="Enter Gender">
+            </div>
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
+            <button class="button" id="addButton">Add Face</button>
+        </div>
+        <script src="{{ url_for('static', filename='enlist.js') }}" async defer></script>
+    </body>
+</html>

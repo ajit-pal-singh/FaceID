@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About</title>
+        <link rel="icon" href="/static/images/icon.png" type="image/png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="nav">
+            <img id="logo" src="/static/images/logo.png" alt="">
+            <div id="tabs">
+                <p class="tab" onclick="window.location.href='/'">recognise</p>
+                <p class="tab" onclick="window.location.href='/enlist'">enlist</p>
+            </div>
+        </div>
+        <div class="about">
+            <h2>Face Recognition Project</h2>
+            <p class="space">
+                This is a Face Recognition Project developed to automatically identify individuals based on facial features. It leverages machine learning algorithms and computer vision techniques to process and analyze faces captured through a webcam or uploaded images. Upon successful identification, it displays details such as the user's name, age, and gender.
+            </p>
+            <h3>Technologies Used:</h3>
+            <ul class="space">
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Backend:</strong> Python (Flask)</li>
+                <li><strong>Face Recognition:</strong> OpenCV, dlib, face_recognition library</li>
+                <li><strong>Animation:</strong> Lottie for smooth animations</li>
+            </ul>
+            <h3>User Flow:</h3>
+            <ul class="space">
+                <li>The user clicks on the "Start Recognition" button or uploads a photo.</li>
+                <li>The system captures the face and sends it to the backend for recognition.</li>
+                <li>If a match is found, the user's details (name, age, gender) are shown in a pop-up card.</li>
+                <li>If no match is found, a relevant error message is displayed.</li>
+            </ul>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
